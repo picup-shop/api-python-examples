@@ -4,7 +4,7 @@
 - 使用命令: git clone https://github.com/picup-shop/api-python-examples.git 克隆下此项目
 - 在config.py下更改APIKEY
 
-####文件与目录说明
+#### 文件与目录说明
 
 - config.py 配置接口地址与APIKEY
 - picup_matting.py 抠图示例，三种不同的输入输出模式
