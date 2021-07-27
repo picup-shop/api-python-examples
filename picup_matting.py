@@ -11,8 +11,8 @@ print(config.API_BASE_URL)
 def matting(matting_type):
   url_params = {
     "mattingType":matting_type, #抠图类型， 1：人像，2：物体，3：头像，4：一键美化，6：通用抠图。一般直接使用6通用抠图具有普适性效果
-    "crop":"false", #是否裁剪至最小非透明区域，false不裁剪，true裁剪，非必填项，无参数则默认不裁剪
-    "bgcolor":"FFFFFF" #填充背景色，url参数，加在url后面，十六进制大写RGB颜色，如FFFFFF，非必填项，不填写则不填充背景色
+    #"crop":"", #是否裁剪至最小非透明区域，false不裁剪，true裁剪，非必填项，无参数则默认不裁剪
+    #"bgcolor":"" #填充背景色，url参数，加在url后面，十六进制大写RGB颜色，如FFFFFF，非必填项，不填写则不填充背景色
   }
   query_str = urllib.parse.urlencode(url_params)
   url = config.API_BASE_URL + '/api/v1/matting?'+query_str
@@ -31,8 +31,8 @@ def matting(matting_type):
 def matting2(matting_type):
   url_params = {
     "mattingType": matting_type,  # 抠图类型， 1：人像，2：物体，3：头像，4：一键美化，6：通用抠图。一般直接使用6通用抠图具有普适性效果
-    "crop": "false",  # 是否裁剪至最小非透明区域，false不裁剪，true裁剪，非必填项，无参数则默认不裁剪
-    "bgcolor": "FFFFFF"  # 填充背景色，url参数，加在url后面，十六进制大写RGB颜色，如FFFFFF，非必填项，不填写则不填充背景色
+    #"crop": "false",  # 是否裁剪至最小非透明区域，false不裁剪，true裁剪，非必填项，无参数则默认不裁剪
+    #"bgcolor": ""  # 填充背景色，url参数，加在url后面，十六进制大写RGB颜色，如FFFFFF，非必填项，不填写则不填充背景色
   }
   query_str = urllib.parse.urlencode(url_params)
   url = config.API_BASE_URL + '/api/v1/matting2?' + query_str
@@ -59,8 +59,8 @@ def mattingByUrl(matting_type):
   test_image_url = "http://deeplor.oss-cn-hangzhou.aliyuncs.com/upload/image/20200903/1705c25fa2884cb282ef2be77ec516ef.jpg"
   url_params = {
     "mattingType": matting_type,  # 抠图类型， 1：人像，2：物体，3：头像，4：一键美化，6：通用抠图。一般直接使用6通用抠图具有普适性效果
-    "crop": "false",  # 是否裁剪至最小非透明区域，false不裁剪，true裁剪，非必填项，无参数则默认不裁剪
-    "bgcolor": "FFFFFF",  # 填充背景色，url参数，加在url后面，十六进制大写RGB颜色，如FFFFFF，非必填项，不填写则不填充背景色,
+    #"crop": "false",  # 是否裁剪至最小非透明区域，false不裁剪，true裁剪，非必填项，无参数则默认不裁剪
+    #"bgcolor": "FFFFFF",  # 填充背景色，url参数，加在url后面，十六进制大写RGB颜色，如FFFFFF，非必填项，不填写则不填充背景色,
     "url": test_image_url #图片url地址
   }
   url = config.API_BASE_URL + '/api/v1/mattingByUrl'
