@@ -17,7 +17,7 @@
 - output文件夹，各种接口示例代码运行的输出存储目录
 
 ##### 注：更多API接口的详细信息请参考官网的API文档(示例项目的代码会根据官网的API文档同步更新)
-可以访问皮卡智能抠图官网在线体验效果： [http://www.picup.shop](http://www.picup.shop)
+可以访问皮卡智能抠图官网在线体验效果： [https://www.tukeli.net](https://www.tukeli.net)
 
 ---
 #### 关于我们
